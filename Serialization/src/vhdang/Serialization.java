@@ -16,6 +16,11 @@ import java.sql.Savepoint;
  */
 public class Serialization {
  
+	
+	/** It is used to serialize data then write to file
+	 * @param e is an Employee object
+	 * @param path file name and path
+	 */
 	public static void saveEmployee(Employee e, String path){
 		
 		try {
@@ -33,6 +38,10 @@ public class Serialization {
 		
 	}
 	
+	/** Used to deserialize data
+	 * @param path read serialized data from file
+	 * @return return employee object
+	 */
 	public static Employee loadEmployee(String path){
 		Employee e = null;
 		

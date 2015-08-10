@@ -9,8 +9,8 @@ import java.io.Serializable;
  * @author haidangvo
  *
  */
-//@SuppressWarnings("serial")
-public class Employee {
+@SuppressWarnings("serial")
+public class Employee implements Serializable{
 		private  String firstName;
 		public String getFirstName() {
 			return firstName;
